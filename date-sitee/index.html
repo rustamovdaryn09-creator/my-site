@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Приглашение</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="screen1" class="screen">
+    <h1><span id="girlName"></span>, пойдёшь со мной на свидание? 💌</h1>
+    <button id="yesBtn">Да</button>
+    <button id="noBtn">Нет</button>
+  </div>
+
+  <div id="screen2" class="screen hidden">
+    <h1>Ура! Выбери дату 📅</h1>
+    <input type="date" id="dateInput">
+    <br>
+    <button id="nextBtn">Дальше</button>
+  </div>
+
+  <div id="screen3" class="screen hidden">
+    <h1>Куда пойдём? 📍</h1>
+    <button class="option" data-value="Кино 🎬">Кино 🎬</button>
+    <button class="option" data-value="Прогулка 🌳">Прогулка 🌳</button>
+    <button class="option" data-value="Кафе ☕">Кафе ☕</button>
+  </div>
+
+  <div id="screen4" class="screen hidden">
+    <h1>Что поедим? 🍽️</h1>
+    <button class="option" data-value="Итальянская 🍝">Итальянская 🍝</button>
+    <button class="option" data-value="Суши 🍣">Суши 🍣</button>
+    <button class="option" data-value="Пицца 🍕">Пицца 🍕</button>
+    <button class="option" data-value="Десерты 🍰">Десерты 🍰</button>
+  </div>
+
+  <div id="screen5" class="screen hidden">
+    <h1>Договорились! 🎉</h1>
+    <p id="result"></p>
+  </div>
+    <div id="screen6" class="screen hidden">
+    <h1>Какой жанр? 🎞️</h1>
+    <button class="option" data-value="Комедия 😂">Комедия 😂</button>
+    <button class="option" data-value="Романтика 💕">Романтика 💕</button>
+    <button class="option" data-value="Ужасы 👻">Ужасы 👻</button>
+    <button class="option" data-value="Фантастика 🚀">Фантастика 🚀</button>
+    <button class="option" data-value="Мультфильм 🧸">Мультфильм 🧸</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+ 
+</body>
+</html>
